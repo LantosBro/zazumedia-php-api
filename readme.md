@@ -3,13 +3,14 @@
 ## Описание
 
 Пример реализации API интерфейса сервиса [go.zazumedia.ru](https://go.zazumedia.ru)
-Предназначен для рассылки сервисных сообщений по средствам sms / viber каналов. 
+
+Предназначен для отправки сервисных сообщений. 
 
 [Документация](http://docs.zazumedia.ru)
 
 ## Установка
 ```cmd
-git clone git@github.com:kosatyi/ipsp-php.git
+git clone git@github.com:zazumedia/api-php-class
 ```
 ## Быстрый старт
 
