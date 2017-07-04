@@ -28,7 +28,7 @@ try {
     $login = 'info@zazumedia.ru';
     $path = $_SERVER['DOCUMENT_ROOT'] . '/../' . $login;
     
-    $zazu = new Zazumedia( $login );
+    $zazu = new Zazumedia( $login, $path );
     $info = $zazu->getInfo();
     
     var_dump($info);
