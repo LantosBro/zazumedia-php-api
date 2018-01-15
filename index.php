@@ -1,17 +1,17 @@
 <?php
-require_once 'Zazumedia.php';
+require_once 'Zmtech.php';
 
 /**
- * Пример использования класса Zazumedia.php
+ * Пример использования класса Zmtech.php
  * Для работы необходимо создать файл с токеном и указать к нему путь
  */
 
 try {
 
-    $login = 'info@zazumedia.ru';
-    $path = $_SERVER['DOCUMENT_ROOT'] . '/../' . $login;
+    $id = '1';
+    $key = '6Imh0dHBzOi8vZ28uemF6dW1lZGlhLnJ1L3Byb2ZpbGUvdG9rZW4i';
 
-    $zazu = new Zazumedia( $login );
+    $zazu = new Zmtech($id, $key);
     $info = $zazu->getInfo();
 
     var_dump($info);

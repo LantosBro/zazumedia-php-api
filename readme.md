@@ -1,34 +1,24 @@
-# Zazumedia (php) Api class
+# Zmtech (php) Api class
 
 ## Описание
 
-Пример реализации API интерфейса сервиса [go.zazumedia.ru](https://go.zazumedia.ru)
-
-Предназначен для отправки сервисных сообщений. 
-
-[Документация](http://docs.zazumedia.ru)
+Пример реализации API интерфейса сервиса массовых SMS / Viber рассылок
 
 ## Установка
 ```cmd
-git clone git@github.com:zazumedia/api-php-class
+git clone git@github.com:zmtechru/api-php-class
 ```
 ## Быстрый старт
 
-Для каждого логина, должен быть файл с именем {ваш логин}, содержимым которого является `token`.
-
-Новый token можно получить [здесь](https://go.zazumedia.ru/profile/edit).
-
-Обратите внимание, файл с токеном не должен быть доступен по http
-
 ```php
 <?php
-require_once 'Zazumedia.php';
+require_once 'Zmtech.php';
 try {
     
-    $login = 'info@zazumedia.ru';
-    $path = $_SERVER['DOCUMENT_ROOT'] . '/../' . $login;
+    $id = '1';
+    $key = '6Imh0dHBzOi8vZ28uemF6dW1lZGlhLnJ1L3Byb2ZpbGUvdG9rZW4i';
     
-    $zazu = new Zazumedia( $login, $path );
+    $zazu = new Zmtech($id, $key);
     $info = $zazu->getInfo();
     
     var_dump($info);
