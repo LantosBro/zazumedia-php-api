@@ -85,7 +85,7 @@ class Zmtech
      */
     private function request( $path, $params = [] ) {
         $curl = curl_init();
-        curl_setopt( $curl, CURLOPT_URL, $this->url . '/' . $path );
+        curl_setopt( $curl, CURLOPT_URL, $this->url . $path );
         curl_setopt( $curl, CURLOPT_HTTPHEADER, [
             'Content-Type: application/json'
         ] );
