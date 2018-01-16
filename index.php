@@ -39,6 +39,7 @@ try {
     $response = $zmtech->sendViber( [
         'phone' => '79112223344',
         'message' => 'test viber',
+        'sender' => 'zmtech',
         'btntext' => 'zmtech.ru',
         'btnlink' => 'http://zmtech.ru',
         'picpath' => 'http://zmtech.ru/logo.png'
@@ -49,12 +50,14 @@ try {
         [
             'phone' => '79112223344',
             'message' => 'test viber',
+            'sender' => 'zmtech',
             'btntext' => 'zmtech.ru',
             'btnlink' => 'http://zmtech.ru',
             'picpath' => 'http://zmtech.ru/logo.png'
         ], [
             'phone' => '79112223345',
             'message' => 'test viber 2',
+            'sender' => 'zmtech',
             'btntext' => 'zmtech.ru',
             'btnlink' => 'http://zmtech.ru',
             'picpath' => 'http://zmtech.ru/logo.png'
