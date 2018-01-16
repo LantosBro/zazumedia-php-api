@@ -9,11 +9,10 @@ try {
 
     $id = '1';
     $key = '6Imh0dHBzOi8vZ28uemF6dW1lZGlhLnJ1L3Byb2ZpbGUvdG9rZW4i';
+    $zmtech = new Zmtech( $id, $key );
 
     // Получить инфо об авторизованном аккаунте
-    $zmtech = new Zmtech( $id, $key );
     $info = $zmtech->getInfo();
-    var_dump( $info );
 
     // Отправить одно Sms
     $response = $zmtech->sendSms( [
@@ -66,7 +65,6 @@ try {
 
     // Запросить статусы
     $statuses = $zmtech->getStatuses();
-    var_dump( $statuses );
 
 } catch ( Exception $e ) {
     echo $e->getMessage();
