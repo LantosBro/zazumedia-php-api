@@ -6,7 +6,7 @@
 
 ## Установка
 ```cmd
-composer require lantosbro/zazumedia-php-api
+composer require lantosbro/zazumedia-php-api:dev-master
 ```
 ## Быстрый старт
 
