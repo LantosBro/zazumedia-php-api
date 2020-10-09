@@ -13,7 +13,8 @@ class Zmtech
     private $key;
     private $response;
 
-    public function __construct( $id, $key ) {
+    public function __construct($url, $id, $key ) {
+        $this->url = $url;
         $this->id = $id;
         $this->key = $key;
     }
