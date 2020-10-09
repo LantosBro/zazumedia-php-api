@@ -33,14 +33,15 @@ class Zmtech
      * Send sms message
      *
      * @param $pack
+     * @param $type
      * @return stdClass
      */
-    public function sendSms( $pack ) {
+    public function sendSms( $pack , $type) {
         if ( ! isset( $pack[ 0 ] ) || ! is_array( $pack[ 0 ] ) ) {
             $pack = [ $pack ];
         }
 
-        return $this->request( '/brand', [ 'pack' => $pack ] );
+        return $this->request( '/'.$type, [ 'pack' => $pack ] );
     }
 
     /**
