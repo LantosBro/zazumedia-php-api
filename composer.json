@@ -1,0 +1,28 @@
+{
+  "name": "lantosbro/zazumedia-php-api",
+  "version": "0.0.1",
+  "description": "API Interface for zazumedia.ru.",
+  "keywords": [
+    "zazumedia",
+    "sms"
+  ],
+  "type": "library",
+  "homepage": "https://github.com/LantosBro/zazumedia-php-api",
+  "license": "NLPL",
+  "authors": [
+    {
+      "name": "ZMTech",
+      "role": "Developer",
+      "homepage": "https://github.com/zmtechru"
+    },
+    {
+      "name": "Malik Nazimanov (Lantos/LantosBro)",
+      "role": "Forker"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "Zmtech": ""
+    }
+  }
+}
