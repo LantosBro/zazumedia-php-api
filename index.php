@@ -6,10 +6,11 @@ require_once 'Zmtech.php';
  */
 
 try {
-
+    
+    $url = 'https://api.zmtech.ru:7778/v1/';
     $id = '1';
     $key = '6Imh0dHBzOi8vZ28uemF6dW1lZGlhLnJ1L3Byb2ZpbGUvdG9rZW4i';
-    $zmtech = new Zmtech( $id, $key );
+    $zmtech = new Zmtech( $url, $id, $key );
 
     // Получить инфо об авторизованном аккаунте
     $info = $zmtech->getInfo();
