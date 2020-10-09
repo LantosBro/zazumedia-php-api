@@ -16,11 +16,11 @@ try {
     $info = $zmtech->getInfo();
 
     // Отправить одно Sms
-    $response = $zmtech->sendSms( 'brand' , [
+    $response = $zmtech->sendSms( [
         'phone' => '79112223344',
         'message' => 'test sms',
         'sender' => 'zmtech.ru'
-    ] );
+    ] , 'brand');
 
     // Отправить несоколько Sms (до 100 штук)
     $response = $zmtech->sendSms( [
