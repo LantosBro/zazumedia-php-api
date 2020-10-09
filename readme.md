@@ -6,7 +6,7 @@
 
 ## Установка
 ```cmd
-git clone git@github.com:zmtechru/api-php-class
+composer require lantosbro/zazumedia-php-api
 ```
 ## Быстрый старт
 
