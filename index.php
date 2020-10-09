@@ -16,7 +16,7 @@ try {
     $info = $zmtech->getInfo();
 
     // Отправить одно Sms
-    $response = $zmtech->sendSms( [
+    $response = $zmtech->sendSms( 'brand' , [
         'phone' => '79112223344',
         'message' => 'test sms',
         'sender' => 'zmtech.ru'
